@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: antiquewhite;
+  font-family: "Nunito", sans-serif;
+}
+
+.container {
+  display: grid;
+  place-items: center;
+  margin-top: 50px;
+}
+
+.mobile {
+  width: 350px;
+  height: 600px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border-radius: 10px;
+  background-color: aliceblue;
+  overflow: hidden;
+  position: relative;
+}
+
+.circle {
+  border-radius: 50%;
+  background-color: #1976d3;
+  width: 280px;
+  height: 280px;
+  position: relative;
+  top: -150px;
+  left: -50px;
+  padding-top: 40px;
+  padding-left: 20px;
+  z-index: 1;
+}
+
+.circle h3,
+.circle h2 {
+  position: absolute;
+  bottom: 40px;
+  right: 80px;
+  color: whitesmoke;
+  padding-left: 60px;
+}
+
+.circle h3 {
+  bottom: 70px;
+}
+
+.circle-two {
+  background-color: #56a6f6;
+  width: 340px;
+  height: 180px;
+  border-radius: 50%;
+  position: relative;
+  top: -380px;
+}
+
+.form {
+  width: 348px;
+  padding-left: 40px;
+  position: absolute;
+  top: 250px;
+}
+
+.form div {
+  margin-top: 5px;
+}
+
+.form label {
+  font-weight: bold;
+}
+
+.form input {
+  width: 270px;
+  padding: 7px 5px;
+  font-size: 16px;
+  border: 1px solid #1976d3;
+  border-radius: 5px;
+  background-color: lightgrey;
+  outline: 1px solid #1976d3;
+  color: #1976d3;
+}
+
+div.advice {
+  text-align: center;
+  font-size: 14px;
+  /* border: 1px solid; */
+  width: 270px;
+  margin: 20px 0;
+}
+.social-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 270px;
+  gap: 0 8px;
+}
+
+div.social-grid-items {
+  margin-top: 15px;
+  border-radius: 10px;
+  padding-top: 0 !important;
+  height: 40px;
+  border: 1.5px solid#1976D3;
+}
+
+svg:not(:host).svg-inline--fa,
+svg:not(:root).svg-inline--fa {
+  /* margin-top: 5px; */
+  padding-left: 3px;
+  color: #1976d3;
+  width: 25px;
+  height: 25px;
+}
+
+div.social-grid-items div {
+  display: inline-block;
+}
+
+div.social-grid-items div#fa {
+  position: relative;
+  top: -4px;
+  left: 4px;
+}
+
+div.btn {
+  margin-top: 15px;
+}
+
+div.btn input {
+  background-color: #1976d3;
+  color: whitesmoke;
+}
+
+.error {
+  border: 1px solid red !important;
+  animation: login;
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
+  /* animation-direction: alternate-reverse; */
+}
+
+@keyframes login {
+  0% {
+    transform: translateX(10px);
+  }
+  50% {
+    transform: translateX(-10px);
+  }
+  75% {
+    transform: translateX(0px);
+  }
+}
