@@ -34,6 +34,7 @@
   </head>
   <body>
     <nav class="container-fluid" style="background-color: rgb(203, 203, 254)">
+      <!-- This is our topbar -->
       <div class="row">
         <div class="col-lg-11">
           <i class="text-white fa-solid fa-bars"></i>
@@ -44,7 +45,9 @@
           <i class="text-white fa-regular fa-window-restore"></i>
         </div>
       </div>
+      <!-- topbar ends here -->
     </nav>
+    <!-- middle bar starts here -->
     <header
       class="container-fluid"
       style="background-color: rgb(173, 173, 255)"
@@ -61,6 +64,8 @@
         <div class="col-lg-6 p-2">SAP</div>
       </div>
     </header>
+    <!-- middle bar ends here -->
+    <!-- lasts bar starts here   -->
     <div class="container">
       <div class="row">
         <div class="col-lg-6">
@@ -82,7 +87,53 @@
         <div style="text-align: right" class="mt-2 col-lg-6">Exit</div>
       </div>
     </div>
-
+    <!-- lastbar ends here -->
     <hr />
+    <!-- main section starts here  -->
+    <main class="container-fluid">
+      <div class="row">
+        <!-- form starts here -->
+        <div class="col-lg-4" style="text-align: right">
+          <form action="" method="get">
+            <div class="mt-2">
+              <label for="client">Client : </label>
+              <input type="number" name="client" id="client" />
+            </div>
+            <div class="mt-2">
+              <label for="user">User : </label>
+              <input type="text" name="user" id="user" />
+            </div>
+            <div class="mt-2">
+              <label for="pass">Password : </label>
+              <input type="password" name="pass" id="pass" />
+            </div>
+            <div class="mt-2">
+              <label for="">Logon Language : </label>
+              <input type="text" value="EN" readonly />
+            </div>
+            <div class="mt-2">
+              <input type="submit" value="Login" />
+            </div>
+          </form>
+        </div>
+        <!-- form ends here -->
+        <!-- info starts here -->
+        <div class="ml-3 col-lg-8">
+          <p style="width: 300px; border-bottom: 0.5px solid gray">
+            Information
+          </p>
+          <p class="m-3">
+            <a
+              class="text-dark"
+              style="text-decoration: none"
+              href="https://www.sap.com/products/technology-platform/hana/what-is-sap-hana.html"
+              ><i class="fa-solid fa-circle-info"></i> S/4 HANA OP</a
+            >
+          </p>
+        </div>
+        <!-- info ends here -->
+      </div>
+    </main>
+    <!-- main section end here -->
   </body>
 </html>

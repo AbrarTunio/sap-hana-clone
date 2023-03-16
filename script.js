@@ -3,7 +3,7 @@ let pass = document.querySelector("#pass");
 let btn = document.querySelector("#btn");
 let form = document.querySelector("form");
 
-let logins = ["time", "secret"];
+let logins = ["time", "abrar"];
 let fail = [];
 
 btn.addEventListener("click", (e) => {
@@ -29,7 +29,7 @@ btn.addEventListener("click", (e) => {
         uname.classList.remove("error");
         pass.classList.remove("error");
         uname.setAttribute("placeholder", "try : time");
-        pass.setAttribute("placeholder", "try : secret");
+        pass.setAttribute("placeholder", "try : abrar");
       },
 
       3000
